@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marta Perea Andújar · Biochemistry &amp; Synthetic Biology</title>
+<meta name="description" content="Biochemistry undergraduate and iGEM UMA team leader. Molecular biology, synthetic biology and biotechnology.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<header class="nav">
+  <a href="#top" class="brand">M<span>P</span>A</a>
+  <nav>
+    <a href="#about" data-i18n="nav_about">About</a>
+    <a href="#journey" data-i18n="nav_journey">Journey</a>
+    <a href="#frida" data-i18n="nav_frida">Frida</a>
+    <a href="#skills" data-i18n="nav_skills">Skills</a>
+    <a href="#lab" data-i18n="nav_lab">Lab</a>
+    <a href="#contact" data-i18n="nav_contact">Contact</a>
+  </nav>
+  <div class="tools">
+    <button id="langBtn" class="pill" aria-label="Change language">ES</button>
+    <button id="themeBtn" class="pill" aria-label="Change theme">☾</button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow" data-i18n="hero_eyebrow">Biochemistry · Synthetic Biology · Biotech</p>
+      <h1>Marta Perea<br>Andújar</h1>
+      <p class="lead" data-i18n="hero_lead">Biochemistry undergraduate and Team Leader of iGEM UMA 25-26, programming life one gene circuit at a time.</p>
+      <div class="cta">
+        <a class="btn primary" href="#lab" data-i18n="cta_lab">Explore the lab</a>
+        <a class="btn" href="#contact" data-i18n="cta_contact">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <canvas id="helix" aria-label="Rotating DNA double helix"></canvas>
+    </div>
+    <a href="#about" class="scroll" aria-label="Scroll">↓</a>
+  </section>
+
+  <section id="about" class="section reveal">
+    <h2><span class="num">01</span> <span data-i18n="about_title">About me</span></h2>
+    <div class="about-grid">
+      <div class="photo">
+        <img class="p1" src="assets/foto_recorte.jpg" alt="Marta Perea Andújar in her lab coat" onerror="this.parentElement.classList.add('nophoto');this.remove()">
+        <div class="mono">MPA</div>
+      </div>
+      <div>
+        <p data-i18n="about_p1">I'm a Biochemistry student at the University of Málaga with a deep curiosity for how cells compute, build and adapt. My focus is on molecular biology, synthetic biology and biotechnology.</p>
+        <p data-i18n="about_p2">As Team Leader of iGEM UMA, I coordinate a multidisciplinary student team that designs engineered biological systems, from the first idea to the bench.</p>
+        <div class="stats">
+          <div><b data-count="3">0</b><small data-i18n="stat_fields">core fields</small></div>
+          <div><b>C1</b><small data-i18n="stat_english">Cambridge English</small></div>
+          <div><b data-count="1">0</b><small data-i18n="stat_team">iGEM team led</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="journey" class="section reveal">
+    <h2><span class="num">02</span> <span data-i18n="journey_title">Journey</span></h2>
+    <div class="timeline">
+      <article>
+        <time data-i18n="t1_date">Mar 2025 – Present</time>
+        <h3>iGEM UMA <small data-i18n="t1_role">Team member &amp; Team Leader 25-26</small></h3>
+        <p data-i18n="t1_desc">Student group directed by Professors Carlos Rodríguez Caso and Manuel Bernal Muñoz, focused on Synthetic Biology, offering practical and interdisciplinary training that complements our degree.</p>
+        <span class="tag">Málaga · Hybrid</span>
+      </article>
+      <article>
+        <time data-i18n="t2_date">Jan 2026</time>
+        <h3 data-i18n="t2_title">Integrative bioinformatics design &amp; methodology for proteomic data analysis</h3>
+        <p data-i18n="t2_desc">Certification awarded by FGUMA, Fundación General de la Universidad de Málaga.</p>
+      </article>
+      <article>
+        <time data-i18n="t3_date">Jul 2023 – Present</time>
+        <h3 data-i18n="t3_title">BSc in Biochemistry</h3>
+        <p>Universidad de Málaga</p>
+      </article>
+      <article>
+        <time>Cambridge</time>
+        <h3>Certificate in Advanced English (C1)</h3>
+        <p data-i18n="t4_desc">University of Cambridge</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="frida" class="section reveal">
+    <h2><span class="num">03</span> <span data-i18n="frida_title">Project Frida · iGEM 2026</span></h2>
+    <p class="sub" data-i18n="frida_sub">A baby's diagnosis should not depend on their nationality.</p>
+    <div class="card">
+      <p class="fp lead-role" data-i18n="frida_role"><b>Team Leader</b> of the Frida project at iGEM UMA 25-26.</p>
+      <p class="fp" data-i18n="frida_p1">Around 300 million people live with a rare disease, and most of these conditions begin in childhood. What a newborn is screened for depends on where they are born: in Spain, the heel-prick test covered from 15 to 45 conditions in 2024 depending on the region.</p>
+      <p class="fp" data-i18n="frida_p2">Frida is the University of Málaga's 2026 iGEM project. It screens mutation-derived RNA from a minimally invasive blood sample using CRISPR-SHERLOCK: a guide RNA directs the LwCas13a enzyme to a specific mutation, and when it finds it, the enzyme cuts fluorescent reporters and the sample lights up, with no sequencing infrastructure required.</p>
+      <p class="fp" data-i18n="frida_p3">With one guide per mutation, many diseases can be screened side by side. The team also built Diana, a web app that turns a mutation into an order-ready guide RNA.</p>
+      <div class="stats">
+        <div><b>300M</b><small data-i18n="fs1">people with a rare disease</small></div>
+        <div><b>7,000+</b><small data-i18n="fs2">rare diseases described</small></div>
+        <div><b>70%</b><small data-i18n="fs3">begin in childhood</small></div>
+      </div>
+      <div class="cta" style="margin-top:26px">
+        <a class="btn primary" href="https://2026.igem.wiki/uma-malaga/" target="_blank" rel="noopener" data-i18n="frida_wiki">Visit the project wiki →</a>
+        <a class="btn" href="https://www.igem.uma.es/" target="_blank" rel="noopener" data-i18n="frida_uma">iGEM UMA website</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section reveal">
+    <h2><span class="num">04</span> <span data-i18n="skills_title">Skills</span></h2>
+    <div class="chips">
+      <span data-i18n="s1">Molecular biology</span><span data-i18n="s2">Synthetic biology</span><span data-i18n="s3">Biotechnological research</span>
+      <span data-i18n="s4">Biochemistry</span><span data-i18n="s5">Proteomics data analysis</span><span data-i18n="s6">Bioinformatics</span>
+      <span data-i18n="s7">Laboratory techniques</span><span data-i18n="s8">Research</span><span data-i18n="s9">Teamwork</span>
+      <span data-i18n="s10">Problem solving</span><span data-i18n="s11">Adaptability</span><span data-i18n="s12">English</span>
+    </div>
+  </section>
+
+  <section id="lab" class="section reveal">
+    <h2><span class="num">05</span> <span data-i18n="lab_title">Interactive lab</span></h2>
+    <p class="sub" data-i18n="lab_sub">Two experiments to play with. No lab coat needed.</p>
+
+    <div class="card">
+      <h3 data-i18n="dogma_title">Central dogma translator</h3>
+      <p class="hint" data-i18n="dogma_hint">Type a DNA coding sequence (A, T, G, C) and watch it become mRNA and then protein.</p>
+      <input id="dna" type="text" value="ATGGCTAGCAAAGGAGAAGAACTTTTCACTGGA" spellcheck="false" autocomplete="off" aria-label="DNA sequence">
+      <div class="rows">
+        <div class="row"><label>DNA</label><div id="rowDna" class="seq"></div></div>
+        <div class="row"><label>mRNA</label><div id="rowRna" class="seq"></div></div>
+        <div class="row"><label data-i18n="protein">Protein</label><div id="rowProt" class="seq"></div></div>
+      </div>
+      <button id="dnaPlay" class="btn small" data-i18n="replay">Replay animation</button>
+    </div>
+
+    <div class="card">
+      <h3 data-i18n="circuit_title">Inducible gene circuit</h3>
+      <p class="hint" data-i18n="circuit_hint">A synthetic biologist's classic: an inducer unlocks the promoter and the cell starts making a glowing reporter protein. Move the slider.</p>
+      <svg id="circuit" viewBox="0 0 700 150" role="img" aria-label="Gene circuit: promoter, RBS, coding sequence, terminator">
+        <line x1="20" y1="95" x2="680" y2="95" class="dnaline"/>
+        <g class="part"><path d="M70 95V45h28" class="prom"/><polygon points="98,35 118,45 98,55" class="promarrow"/><text x="70" y="125">Promoter</text></g>
+        <g class="part"><path d="M190 95a30 30 0 0 1 60 0z" class="rbs"/><text x="190" y="125">RBS</text></g>
+        <g class="part"><rect x="300" y="72" width="180" height="46" rx="6" class="cds"/><text x="330" y="100" class="in">GFP</text><text x="300" y="138">CDS</text></g>
+        <g class="part"><path d="M560 95V50M535 50h50" class="term"/><text x="520" y="125">Terminator</text></g>
+        <g id="mrnas"></g>
+      </svg>
+      <div class="control">
+        <label for="inducer" data-i18n="inducer">Inducer</label>
+        <input id="inducer" type="range" min="0" max="100" value="20">
+        <output id="inducerOut">20%</output>
+      </div>
+      <div class="flask-wrap">
+        <div class="flask"><div class="liquid" id="liquid"></div><span id="flaskTxt">GFP</span></div>
+        <div class="meters">
+          <div><small data-i18n="m_mrna">mRNA</small><div class="bar"><i id="barM"></i></div></div>
+          <div><small data-i18n="m_prot">Protein (fluorescence)</small><div class="bar"><i id="barP"></i></div></div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+  <section id="contact" class="section reveal">
+    <h2><span class="num">06</span> <span data-i18n="contact_title">Let's connect</span></h2>
+    <p class="sub" data-i18n="contact_sub">Open to collaborations, research opportunities and conversations about synthetic biology.</p>
+    <a class="btn primary" href="https://www.linkedin.com/in/marta-perea-and%C3%BAjar-633b3a356" target="_blank" rel="noopener">LinkedIn →</a>
+    <a class="btn" href="https://orcid.org/0009-0009-8090-1354" target="_blank" rel="noopener">ORCID · 0009-0009-8090-1354</a>
+    <a class="btn" href="mailto:martaperand.trabajo@gmail.com">martaperand.trabajo@gmail.com</a>
+  </section>
+</main>
+
+<footer>© <span id="yr"></span> Marta Perea Andújar</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
