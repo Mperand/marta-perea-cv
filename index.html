@@ -31,6 +31,7 @@
     <a href="#journey" data-i18n="nav_journey">Journey</a>
     <a href="#frida" data-i18n="nav_frida">Frida</a>
     <a href="#skills" data-i18n="nav_skills">Skills</a>
+    <a href="#protocols" data-i18n="nav_protocols">Protocols</a>
     <a href="#lab" data-i18n="nav_lab">Lab</a>
     <a href="#contact" data-i18n="nav_contact">Contact</a>
   </nav>
@@ -44,17 +45,17 @@
   <section class="hero">
     <div class="hero-text">
       <p class="eyebrow" data-i18n="hero_eyebrow">Biochemistry · Synthetic Biology · Biotech</p>
-      <h1>Marta Perea<br>Andújar</h1>
+      <div class="name-wrap">
+        <canvas id="helix" aria-hidden="true"></canvas>
+        <h1>Marta Perea<br>Andújar</h1>
+      </div>
       <p class="lead" data-i18n="hero_lead">Biochemistry undergraduate and Team Leader of iGEM UMA 25-26, programming life one gene circuit at a time.</p>
       <div class="cta">
         <a class="btn primary" href="#lab" data-i18n="cta_lab">Explore the lab</a>
         <a class="btn" href="#contact" data-i18n="cta_contact">Get in touch</a>
       </div>
     </div>
-    <div class="hero-visual">
-      <canvas id="helix" aria-label="Rotating DNA double helix"></canvas>
-    </div>
-    <a href="#about" class="scroll" aria-label="Scroll">↓</a>
+    <a href="#about" class="scroll" aria-label="Scroll down">↓</a>
   </section>
 
   <section id="about" class="section reveal">
@@ -80,6 +81,16 @@
     <h2><span class="num">02</span> <span data-i18n="journey_title">Journey</span></h2>
     <div class="timeline">
       <article>
+        <time>Cambridge</time>
+        <h3>Certificate in Advanced English (C1)</h3>
+        <p data-i18n="t4_desc">University of Cambridge</p>
+      </article>
+      <article>
+        <time data-i18n="t3_date">Jul 2023 – Present</time>
+        <h3 data-i18n="t3_title">BSc in Biochemistry</h3>
+        <p>Universidad de Málaga</p>
+      </article>
+      <article>
         <time data-i18n="t1_date">Mar 2025 – Present</time>
         <h3>iGEM UMA <small data-i18n="t1_role">Team member &amp; Team Leader 25-26</small></h3>
         <p data-i18n="t1_desc">Student group directed by Professors Carlos Rodríguez Caso and Manuel Bernal Muñoz, focused on Synthetic Biology, offering practical and interdisciplinary training that complements our degree.</p>
@@ -89,16 +100,6 @@
         <time data-i18n="t2_date">Jan 2026</time>
         <h3 data-i18n="t2_title">Integrative bioinformatics design &amp; methodology for proteomic data analysis</h3>
         <p data-i18n="t2_desc">Certification awarded by FGUMA, Fundación General de la Universidad de Málaga.</p>
-      </article>
-      <article>
-        <time data-i18n="t3_date">Jul 2023 – Present</time>
-        <h3 data-i18n="t3_title">BSc in Biochemistry</h3>
-        <p>Universidad de Málaga</p>
-      </article>
-      <article>
-        <time>Cambridge</time>
-        <h3>Certificate in Advanced English (C1)</h3>
-        <p data-i18n="t4_desc">University of Cambridge</p>
       </article>
     </div>
   </section>
@@ -125,16 +126,51 @@
 
   <section id="skills" class="section reveal">
     <h2><span class="num">04</span> <span data-i18n="skills_title">Skills</span></h2>
-    <div class="chips">
-      <span data-i18n="s1">Molecular biology</span><span data-i18n="s2">Synthetic biology</span><span data-i18n="s3">Biotechnological research</span>
-      <span data-i18n="s4">Biochemistry</span><span data-i18n="s5">Proteomics data analysis</span><span data-i18n="s6">Bioinformatics</span>
-      <span data-i18n="s7">Laboratory techniques</span><span data-i18n="s8">Research</span><span data-i18n="s9">Teamwork</span>
-      <span data-i18n="s10">Problem solving</span><span data-i18n="s11">Adaptability</span><span data-i18n="s12">English</span>
-    </div>
+    <h3 class="skgroup" data-i18n="skills_sci">Scientific</h3>
+    <div class="chips"><span data-i18n="s1">Molecular biology</span><span data-i18n="s2">Synthetic biology</span><span data-i18n="s3">Biotechnological research</span><span data-i18n="s4">Biochemistry</span><span data-i18n="s5">Proteomics data analysis</span><span data-i18n="s6">Bioinformatics</span><span data-i18n="s7">Laboratory techniques</span><span data-i18n="s8">Research</span></div>
+    <h3 class="skgroup" data-i18n="skills_pers">Personal</h3>
+    <div class="chips"><span data-i18n="s9">Teamwork</span><span data-i18n="s10">Problem solving</span><span data-i18n="s11">Adaptability</span><span data-i18n="s12">English</span></div>
+  </section>
+
+  <section id="protocols" class="section reveal">
+    <h2><span class="num">05</span> <span data-i18n="protocols_title">Lab protocols</span></h2>
+    <p class="sub" data-i18n="protocols_sub">Molecular biology techniques I can carry out at the bench.</p>
+    <details class="proto">
+      <summary><span class="pn">01</span><span class="pt" data-i18n="p1_t">Competent E. coli cells</span><span class="chev">+</span></summary>
+      <div class="pb"><p data-i18n="p1_d">Preparing E. coli cells so they can take up foreign DNA for cloning.</p><p class="soon" data-i18n="proto_soon">Step-by-step protocol coming soon.</p></div>
+    </details>
+    <details class="proto">
+      <summary><span class="pn">02</span><span class="pt" data-i18n="p2_t">PCR DNA cleanup (large product)</span><span class="chev">+</span></summary>
+      <div class="pb"><p data-i18n="p2_d">Purifying large PCR products, removing primers, enzymes and salts.</p><p class="soon" data-i18n="proto_soon">Step-by-step protocol coming soon.</p></div>
+    </details>
+    <details class="proto">
+      <summary><span class="pn">03</span><span class="pt" data-i18n="p3_t">Overhang PCR</span><span class="chev">+</span></summary>
+      <div class="pb"><p data-i18n="p3_d">Amplification with primers that carry extra tails, adding overhangs or recognition sites to the ends of a fragment.</p><p class="soon" data-i18n="proto_soon">Step-by-step protocol coming soon.</p></div>
+    </details>
+    <details class="proto">
+      <summary><span class="pn">04</span><span class="pt" data-i18n="p4_t">Transformation of competent cells</span><span class="chev">+</span></summary>
+      <div class="pb"><p data-i18n="p4_d">Introducing plasmid DNA into competent cells and selecting the transformants.</p><p class="soon" data-i18n="proto_soon">Step-by-step protocol coming soon.</p></div>
+    </details>
+    <details class="proto">
+      <summary><span class="pn">05</span><span class="pt" data-i18n="p5_t">Mutagenic PCR</span><span class="chev">+</span></summary>
+      <div class="pb"><p data-i18n="p5_d">PCR designed to introduce changes into a DNA sequence.</p><p class="soon" data-i18n="proto_soon">Step-by-step protocol coming soon.</p></div>
+    </details>
+    <details class="proto">
+      <summary><span class="pn">06</span><span class="pt" data-i18n="p6_t">BsaI digestion</span><span class="chev">+</span></summary>
+      <div class="pb"><p data-i18n="p6_d">Cutting DNA with the type IIS enzyme BsaI, which leaves custom overhangs next to its recognition site.</p><p class="soon" data-i18n="proto_soon">Step-by-step protocol coming soon.</p></div>
+    </details>
+    <details class="proto">
+      <summary><span class="pn">07</span><span class="pt" data-i18n="p7_t">Golden Gate assembly</span><span class="chev">+</span></summary>
+      <div class="pb"><p data-i18n="p7_d">Scarless one-pot assembly of several DNA fragments using type IIS enzymes and ligase.</p><p class="soon" data-i18n="proto_soon">Step-by-step protocol coming soon.</p></div>
+    </details>
+    <details class="proto">
+      <summary><span class="pn">08</span><span class="pt" data-i18n="p8_t">Miniprep</span><span class="chev">+</span></summary>
+      <div class="pb"><p data-i18n="p8_d">Small-scale extraction and purification of plasmid DNA from a bacterial culture.</p><p class="soon" data-i18n="proto_soon">Step-by-step protocol coming soon.</p></div>
+    </details>
   </section>
 
   <section id="lab" class="section reveal">
-    <h2><span class="num">05</span> <span data-i18n="lab_title">Interactive lab</span></h2>
+    <h2><span class="num">06</span> <span data-i18n="lab_title">Interactive lab</span></h2>
     <p class="sub" data-i18n="lab_sub">Two experiments to play with. No lab coat needed.</p>
 
     <div class="card">
@@ -176,7 +212,7 @@
     </section>
 
   <section id="contact" class="section reveal">
-    <h2><span class="num">06</span> <span data-i18n="contact_title">Let's connect</span></h2>
+    <h2><span class="num">07</span> <span data-i18n="contact_title">Let's connect</span></h2>
     <p class="sub" data-i18n="contact_sub">Open to collaborations, research opportunities and conversations about synthetic biology.</p>
     <a class="btn primary" href="https://www.linkedin.com/in/marta-perea-and%C3%BAjar-633b3a356" target="_blank" rel="noopener">LinkedIn →</a>
     <a class="btn" href="https://orcid.org/0009-0009-8090-1354" target="_blank" rel="noopener">ORCID · 0009-0009-8090-1354</a>

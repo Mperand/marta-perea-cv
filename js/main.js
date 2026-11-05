@@ -9,6 +9,18 @@
 
   /* ---------- Translations (English text lives in the HTML) ---------- */
   const ES = {
+    nav_protocols: "Protocolos",
+    skills_sci: "Científicas", skills_pers: "Personales",
+    protocols_title: "Protocolos de laboratorio", protocols_sub: "Técnicas de biología molecular que sé realizar en el laboratorio.",
+    proto_soon: "Protocolo paso a paso próximamente.",
+    p1_t: "Células competentes de E. coli", p1_d: "Preparación de células de E. coli capaces de incorporar ADN externo para clonaje.",
+    p2_t: "Limpieza de ADN de PCR (producto grande)", p2_d: "Purificación de productos de PCR grandes, eliminando cebadores, enzimas y sales.",
+    p3_t: "PCR con overhang", p3_d: "Amplificación con cebadores que incorporan colas adicionales, añadiendo extremos solapantes o sitios de reconocimiento al fragmento.",
+    p4_t: "Transformación de células competentes", p4_d: "Introducción de ADN plasmídico en células competentes y selección de los transformantes.",
+    p5_t: "PCR mutagénica", p5_d: "PCR diseñada para introducir cambios en una secuencia de ADN.",
+    p6_t: "Digestión con BsaI", p6_d: "Corte del ADN con la enzima de tipo IIS BsaI, que deja extremos cohesivos personalizados junto a su sitio de reconocimiento.",
+    p7_t: "Ensamblaje Golden Gate", p7_d: "Ensamblaje en un solo paso, sin cicatrices, de varios fragmentos de ADN con enzimas de tipo IIS y ligasa.",
+    p8_t: "Miniprep", p8_d: "Extracción y purificación a pequeña escala de ADN plasmídico a partir de un cultivo bacteriano.",
     nav_frida: "Frida",
     frida_title: "Proyecto Frida · iGEM 2026", frida_sub: "El diagnóstico de un bebé no debería depender de su nacionalidad.",
     frida_role: "<b>Team Leader</b> del proyecto Frida en iGEM UMA 25-26.",
@@ -118,7 +130,7 @@
   }
   addEventListener("resize", sizeHelix); sizeHelix();
   function drawHelix(t) {
-    const w = hc.clientWidth, h = hc.clientHeight, n = 36, amp = Math.min(h * .28, 38);
+    const w = hc.clientWidth, h = hc.clientHeight, n = Math.round(w / 32), amp = Math.min(h * .2, 34);
     hx.clearRect(0, 0, w, h);
     const items = [];
     for (let i = 0; i < n; i++) {
@@ -126,14 +138,14 @@
       items.push({ x, y1: h / 2 + Math.sin(a) * amp, z1: Math.cos(a), y2: h / 2 - Math.sin(a) * amp, z2: -Math.cos(a) });
     }
     for (const s of items) { // rungs
-      hx.globalAlpha = .35; hx.strokeStyle = colors.accent2; hx.lineWidth = 1.5;
+      hx.globalAlpha = .28; hx.strokeStyle = colors.accent2; hx.lineWidth = 1.5;
       hx.beginPath(); hx.moveTo(s.x, s.y1); hx.lineTo(s.x, s.y2); hx.stroke();
     }
     const balls = [];
     items.forEach((s) => { balls.push([s.x, s.y1, s.z1, colors.accent]); balls.push([s.x, s.y2, s.z2, colors.ok]); });
     balls.sort((a, b) => a[2] - b[2]);
     for (const [x, y, z, c] of balls) {
-      hx.globalAlpha = .45 + .55 * (z + 1) / 2; hx.fillStyle = c; hx.shadowColor = c; hx.shadowBlur = 6;
+      hx.globalAlpha = .3 + .45 * (z + 1) / 2; hx.fillStyle = c; hx.shadowColor = c; hx.shadowBlur = 6;
       hx.beginPath(); hx.arc(x, y, 2.5 + 2 * (z + 1) / 2, 0, 7); hx.fill();
     }
     hx.shadowBlur = 0; hx.globalAlpha = 1;
