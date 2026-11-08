@@ -9,18 +9,7 @@
 
   /* ---------- Translations (English text lives in the HTML) ---------- */
   const ES = {
-    nav_protocols: "Protocolos",
     skills_sci: "Científicas", skills_pers: "Personales",
-    protocols_title: "Protocolos de laboratorio", protocols_sub: "Técnicas de biología molecular que sé realizar en el laboratorio.",
-    proto_soon: "Protocolo paso a paso próximamente.",
-    p1_t: "Células competentes de E. coli", p1_d: "Preparación de células de E. coli capaces de incorporar ADN externo para clonaje.",
-    p2_t: "Limpieza de ADN de PCR (producto grande)", p2_d: "Purificación de productos de PCR grandes, eliminando cebadores, enzimas y sales.",
-    p3_t: "PCR con overhang", p3_d: "Amplificación con cebadores que incorporan colas adicionales, añadiendo extremos solapantes o sitios de reconocimiento al fragmento.",
-    p4_t: "Transformación de células competentes", p4_d: "Introducción de ADN plasmídico en células competentes y selección de los transformantes.",
-    p5_t: "PCR mutagénica", p5_d: "PCR diseñada para introducir cambios en una secuencia de ADN.",
-    p6_t: "Digestión con BsaI", p6_d: "Corte del ADN con la enzima de tipo IIS BsaI, que deja extremos cohesivos personalizados junto a su sitio de reconocimiento.",
-    p7_t: "Ensamblaje Golden Gate", p7_d: "Ensamblaje en un solo paso, sin cicatrices, de varios fragmentos de ADN con enzimas de tipo IIS y ligasa.",
-    p8_t: "Miniprep", p8_d: "Extracción y purificación a pequeña escala de ADN plasmídico a partir de un cultivo bacteriano.",
     nav_frida: "Frida",
     frida_title: "Proyecto Frida · iGEM 2026", frida_sub: "El diagnóstico de un bebé no debería depender de su nacionalidad.",
     frida_role: "<b>Team Leader</b> del proyecto Frida en iGEM UMA 25-26.",
@@ -56,6 +45,64 @@
     inducer: "Inductor", m_mrna: "ARNm", m_prot: "Proteína (fluorescencia)",
     contact_title: "Conectemos",
     contact_sub: "Abierta a colaboraciones, oportunidades de investigación y conversaciones sobre biología sintética.",
+    nav_techniques: "Técnicas",
+    hero_lead: "Estudiante de <strong>Bioquímica</strong> y <strong>líder del equipo iGEM UMA 25-26</strong>, programando la vida circuito genético a circuito genético.",
+    about_p1: "Soy estudiante de <strong>Bioquímica</strong> en la <strong>Universidad de Málaga</strong>, con una profunda curiosidad por cómo las células computan, construyen y se adaptan. Mi enfoque es la <strong>biología molecular</strong>, la <strong>biología sintética</strong> y la <strong>biotecnología</strong>.",
+    about_p2: "Como <strong>líder del equipo iGEM UMA</strong>, coordino un equipo estudiantil multidisciplinar que diseña sistemas biológicos modificados, desde la primera idea hasta el laboratorio.",
+    about_p3: "Soy una chica <strong>trabajadora</strong>, <strong>curiosa</strong> y <strong>dispuesta a aprender</strong>. Soy bastante <strong>proactiva</strong>, <strong>adaptable</strong> y <strong>resiliente</strong>.",
+    stat_fields: "áreas clave",
+    stat_english: "C1 · Cambridge",
+    stat_spanish: "Español · nativo",
+    stat_team: "equipo iGEM liderado",
+    t1_role: "Miembro y líder del equipo 25-26",
+    t1_desc: "Grupo de estudiantes dirigido por los profesores <strong>Carlos Rodríguez Caso</strong> y <strong>Manuel Bernal Muñoz</strong>, centrado en <strong>Biología Sintética</strong>, con el objetivo de recibir una formación práctica e interdisciplinar que complemente nuestros estudios de Grado. <strong>Líder del equipo 25-26</strong>, trabajando en el proyecto <strong>Frida</strong>.",
+    t2_desc: "Certificación expedida por la <strong>FGUMA</strong>, Fundación General de la Universidad de Málaga.",
+    j_acad: "Estudios y proyectos",
+    j_cert: "Certificaciones",
+    frida_p1: "Unos <strong>300 millones de personas</strong> viven con una <strong>enfermedad rara</strong>, y la mayoría comienza en la infancia. Lo que se le detecta a un recién nacido depende de dónde nace: en España, la prueba del talón cubrió <strong>entre 15 y 45 enfermedades</strong> en 2024 según la región.",
+    frida_p2: "Frida es el <strong>proyecto iGEM 2026 de la Universidad de Málaga</strong>. Analiza ARN derivado de mutaciones en una muestra de sangre mínimamente invasiva con <strong>CRISPR-SHERLOCK</strong>: un ARN guía dirige a la enzima <strong>LwCas13a</strong> hacia una mutación concreta y, al encontrarla, corta reporteros fluorescentes y la muestra se ilumina, <strong>sin necesidad de infraestructura de secuenciación</strong>.",
+    frida_p3: "Con una guía por mutación, <strong>se pueden analizar muchas enfermedades a la vez</strong>. El equipo también ha creado <strong>Diana</strong>, una aplicación web que convierte una mutación en un ARN guía listo para pedir.",
+    frida_role: "<b>Team Leader</b> del proyecto Frida en iGEM UMA 25-26.",
+    sp1: "Trabajadora",
+    sp2: "Curiosa",
+    sp3: "Dispuesta a aprender",
+    sp4: "Proactiva",
+    s11: "Adaptable",
+    sp5: "Resiliente",
+    s9: "Trabajo en equipo",
+    sp6: "Coordinación",
+    s10: "Resolución de problemas",
+    s12: "Inglés (C1)",
+    sp7: "Español (nativo)",
+    tg1: "Básicos de laboratorio y medios",
+    q1: "Autoclave",
+    q2: "Preparación de medio LB (con agar)",
+    q3: "Medio SOC 1X",
+    q4: "Células competentes de E. coli",
+    tg2: "Clonaje",
+    q5: "PCR con overhang",
+    q6: "PCR mutagénica",
+    q7: "Digestión",
+    q9: "Ligación",
+    q10: "Ensamblaje Golden Gate",
+    q11: "Transformación de células competentes (E. coli)",
+    q12: "Precultivos",
+    q13: "Miniprep (kit NZYtech)",
+    q14: "Almacenamiento a −80 °C",
+    tg3: "PCR y análisis",
+    q15: "PCR con Taq polimerasa",
+    q16: "PCR con Q5 High-Fidelity",
+    q17: "PCR de colonia",
+    q18: "Limpieza de ADN de PCR (producto grande)",
+    q19: "Electroforesis en gel de agarosa",
+    q21: "NanoDrop",
+    skills_sci: "Científicas",
+    skills_pers: "Personales",
+    techniques_title: "Técnicas aprendidas",
+    tech_sub: "Técnicas de laboratorio que he aprendido, desde la preparación de medios hasta el clonaje y el análisis por PCR.",
+    dogma_hint: "Escribe una <strong>secuencia codificante de ADN</strong> (A, T, G, C) y mira cómo se convierte en <strong>ARNm</strong> y después en <strong>proteína</strong>.",
+    circuit_hint: "Un clásico de la biología sintética: un <strong>inductor</strong> desbloquea el <strong>promotor</strong> y la célula empieza a fabricar una proteína reportera fluorescente. Mueve el control.",
+    contact_sub: "Abierta a <strong>colaboraciones</strong>, <strong>oportunidades de investigación</strong> y conversaciones sobre biología sintética y otras áreas.",
   };
   const EN = {};
   document.querySelectorAll("[data-i18n]").forEach((el) => (EN[el.dataset.i18n] = el.innerHTML));
@@ -100,6 +147,14 @@
   }), { threshold: 0.12 });
   document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
   $("#yr").textContent = new Date().getFullYear();
+
+  /* ---------- Side navigation: highlight current section ---------- */
+  const navLinks = [...document.querySelectorAll(".side nav a")];
+  const spy = new IntersectionObserver((es) => es.forEach((e) => {
+    if (!e.isIntersecting) return;
+    navLinks.forEach((l) => l.classList.toggle("active", l.getAttribute("href") === "#" + e.target.id));
+  }), { rootMargin: "-40% 0px -55% 0px" });
+  document.querySelectorAll("main > section[id]").forEach((sec) => spy.observe(sec));
 
   /* ---------- Background particles ---------- */
   const bg = $("#bg"), bctx = bg.getContext("2d");
