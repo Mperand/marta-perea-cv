@@ -152,7 +152,11 @@
   const navLinks = [...document.querySelectorAll(".side nav a")];
   const spy = new IntersectionObserver((es) => es.forEach((e) => {
     if (!e.isIntersecting) return;
-    navLinks.forEach((l) => l.classList.toggle("active", l.getAttribute("href") === "#" + e.target.id));
+    navLinks.forEach((l) => {
+      const on = l.getAttribute("href") === "#" + e.target.id;
+      l.classList.toggle("active", on);
+      if (on) { const n = l.parentElement; n.scrollTo({ left: l.offsetLeft - (n.clientWidth - l.offsetWidth) / 2, behavior: "smooth" }); }
+    });
   }), { rootMargin: "-40% 0px -55% 0px" });
   document.querySelectorAll("main > section[id]").forEach((sec) => spy.observe(sec));
 
